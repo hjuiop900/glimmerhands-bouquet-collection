@@ -212,3 +212,65 @@
   .bouquet-page .what-grid article:last-child{border-bottom:0}
   .bouquet-page .what-grid .practice-kicker{min-height:0}
 }
+
+
+/* Copy-only refinement + clearer WHAT WE DO hierarchy */
+.bouquet-page,
+.bouquet-page button,
+.bouquet-page a,
+.bouquet-page input,
+.bouquet-page textarea{
+  font-family:"Pretendard Variable",Pretendard,"SUIT Variable",SUIT,"Apple SD Gothic Neo","Noto Sans KR",sans-serif !important;
+}
+.bouquet-page .what-we-do-compact{
+  padding-top:clamp(120px,13vw,190px);
+  padding-bottom:clamp(120px,13vw,190px);
+}
+.bouquet-page .what-we-do-compact .section-head{
+  margin-bottom:clamp(72px,8vw,110px);
+}
+.bouquet-page .what-grid article{
+  padding-top:52px;
+  padding-bottom:58px;
+}
+.bouquet-page .what-grid .practice-kicker,
+.bouquet-page .what-grid .practice-direct-link{
+  display:block;
+  min-height:0;
+  margin:0 0 30px;
+  font-size:12px;
+  line-height:1.45;
+  font-weight:600;
+  letter-spacing:.12em;
+  color:rgba(23,23,20,.76);
+  text-decoration:none;
+}
+.bouquet-page .what-grid .practice-direct-link:hover{
+  color:rgba(23,23,20,1);
+}
+.bouquet-page .what-grid h3{
+  margin-bottom:22px;
+}
+@media(max-width:600px){
+  .bouquet-page .what-we-do-compact{
+    padding-top:100px;
+    padding-bottom:100px;
+  }
+  .bouquet-page .what-we-do-compact .section-head{
+    margin-bottom:56px;
+  }
+  .bouquet-page .what-grid article,
+  .bouquet-page .what-grid article:first-child,
+  .bouquet-page .what-grid article:nth-child(2),
+  .bouquet-page .what-grid article:nth-child(3),
+  .bouquet-page .what-grid article:nth-child(4){
+    padding-top:42px;
+    padding-bottom:46px;
+  }
+}
+
+/* Final inquiry title refinement */
+.bouquet-page .inquiry h2{
+  font-size:clamp(24px,3vw,42px) !important;
+  line-height:1.38 !important;
+}
